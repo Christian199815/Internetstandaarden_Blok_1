@@ -5,14 +5,11 @@
     /* colors */
     --bg-color: #161616;
     --def-text-color: #FFFFFF;
-    --selected-text-color: yellow;
+    --selected-text-color: rgb(116, 116, 197);
     --footer-bg-color: rgb(49, 46, 46);
     --footer-link-color: yellow;
 
     --info-block-border-color-1: blue;
-    --info-block-border-color-2: yellow;
-    --info-block-border-color-3: lightgreen;
-    --info-block-border-color-4: red;
 
     --textgradient-color-1: #DFB79E;
     --textgradient-color-2: #2B0413;
@@ -25,19 +22,12 @@
     --recipe-duration: 5s;
 
 
-    /* Fonts */
-    --h1: Georgia, serif;
-    --h2: serif;
-    --h3: serif;
-
-    --p: Tahoma, Trebuchet;
-    --nav: Garamond;
-
 
     /* Asorti */
-    --left-spacing: 1%;
+    --left-spacing: 2%;
     --right-spacing: 3%;
-    --NULL: none;
+
+
 }
 
 /* ------------------------------------ */
@@ -50,8 +40,21 @@ body {
     background: transparent url("../.img/pattern.png") repeat top left;
     background-color: var(--bg-color);
     overflow-y: scroll;
-    color: var(--def-text-color);
-    font-family: var(--p);
+}
+
+body p {
+    color: white;
+    font-family: Tahoma, Trebuchet;
+}
+
+button {
+    background-color: #161616;
+    color: yellow;
+    border-radius: 5px;
+}
+
+button:hover {
+    text-decoration: underline;
 }
 
 img {
@@ -59,27 +62,31 @@ img {
 }
 
 h1 {
-    font-family: var(--h1);
+    font-family: Georgia, serif;
     font-size: 850%;
 }
 
 h2 {
-    font-family: var(--h2);
+    font-family: serif;
 }
 
 h3 {
-    font-family: var(--h3);
+    font-family: serif;
     font-style: italic;
 }
 
 .divider {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    left: var(--left-spacing);
 }
 
 body::-webkit-scrollbar {
-    display: var(--NULL);
+    display: none;
 
+}
+
+th {
+    color: white;
 }
 
 #Home header,
@@ -99,15 +106,11 @@ body::-webkit-scrollbar {
 
 nav ul li {
     padding: 15px 20px;
-    text-decoration: var(--NULL);
+    text-decoration: none;
     font-size: medium;
-    list-style: var(--NULL);
+    list-style: none;
 }
 
-nav a p {
-    color: var(--def-text-color);
-    font-family: var(--nav);
-}
 
 .active {
     color: var(--selected-text-color);
@@ -134,7 +137,7 @@ nav ul {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
@@ -151,36 +154,44 @@ footer a {
 
 /* ------------------------------------ */
 
-
-
 /* Layout of the pages */
 /* ------------------------------------ */
 
-/* We Love Cocktails Page */
-/* ------------------------------------ */
-
-#Home #info-block {
-    list-style: var(--NULL);
+.InformationBlock {
+    list-style: none;
     display: flex;
     justify-content: center;
     position: relative;
     right: 0.75%;
 }
 
-#Home #info-block li {
+.InformationBlock li {
     border: 3px solid var(--info-block-border-color-1);
     padding: 20px 40px 40px;
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
-#Home #info-block h2 {
+.InformationBlock h2 {
     text-align: center;
+    color: white
+}
+.InformationBlock h3 {
+    text-align: center;
+    color: white;
 }
 
-/* ------------------------------------ */
+#Famous .InformationBlock img, #Recipe .InformationBlock img  {
+    min-height: 500px;
+}
+
+.InformationBlock table {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* The Famous Ones Page */
@@ -188,52 +199,18 @@ footer a {
 
 #Famous header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#Famous header section {
+.headerIMG {
     display: flex;
-    justify-content: space-around;
+    margin: auto;
 }
 
 #Famous article p {
     max-width: 500px;
 }
-
-#Famous #cool-ones {
-    list-style: var(--NULL);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    right: 0.75%;
-}
-
-#Famous #cool-ones li {
-    border: 3px solid var(--info-block-border-color-2);
-    padding: 20px 40px 40px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#Famous #cool-ones li img {
-    min-height: 500px;
-}
-
-#Famous #cool-ones h2 {
-    text-align: center;
-
-}
-
-#Famous #cool-ones h3 {
-    text-align: center;
-    position: relative;
-
-}
-
-
 
 /* ------------------------------------ */
 
@@ -244,38 +221,7 @@ footer a {
 #Recipe .bottles {
     display: flex;
     justify-content: space-around;
-    list-style: var(--NULL);
-}
-
-#Recipe #recipe-block {
-    list-style: var(--NULL);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    right: 0.75%;
-}
-
-#Recipe #recipe-block li {
-    border: 3px solid var(--info-block-border-color-3);
-    padding: 20px 40px 40px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#Recipe #recipe-block li img {
-    min-height: 500px;
-}
-
-#Recipe #recipe-block li h3 {
-    text-align: center;
-}
-
-#Recipe #recipe-block li table {
-    display: flex;
-    justify-content: center;
+    list-style: none;
 }
 
 #Recipe #ocean {
@@ -292,31 +238,8 @@ footer a {
 
 #Origin #timeLine {
     display: flex;
-    justify-content: center;
+    margin: auto;
 }
-
-#Origin #the-line {
-    list-style: var(--NULL);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    right: 0.75%;
-}
-
-#Origin #the-line li {
-    border: 3px solid var(--info-block-border-color-4);
-    padding: 20px 40px 40px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#Origin #the-line li h3 {
-    text-align: center;
-}
-
 /* ------------------------------------ */
 
 
@@ -333,6 +256,7 @@ footer a {
 #Source #links article {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #Source #links article a {
@@ -340,10 +264,6 @@ footer a {
 }
 
 /* ------------------------------------ */
-
-
-
-
 
 
 /* Animations */
@@ -365,6 +285,8 @@ footer a {
         -moz-transform: rotate(360deg);
     }
 }
+
+/* rotate(360deg) */
 
 @-webkit-keyframes spin {
     100% {
@@ -435,6 +357,7 @@ footer a {
 .TextGradient {
     background: linear-gradient(-45deg, var(--textgradient-color-1), var(--textgradient-color-1), var(--textgradient-color-2), var(--textgradient-color-2), var(--textgradient-color-3), var(--textgradient-color-3));
     background-size: 300%;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animated_text var(--textgradient-duration) ease-in-out infinite;
@@ -467,7 +390,7 @@ footer a {
 
     .Spin,
     .responsive-hide {
-        display: var(--NULL);
+        display: none;
     }
 
 }

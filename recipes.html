@@ -12,25 +12,19 @@
 
 <body id="Recipe">
     <nav>
-        <a href="index.html">
-            <p id="word-title">We Love Cocktails</p>
-        </a>
+        <button id="word-title" onclick="window.location.href='index.html'">
+            We Love Cocktails
+        </button>
 
         <ul>
             <li>
-                <a href="origin.html">
-                    <p>The Origin</p>
-                </a>
+                <button onclick="window.location.href='origin.html'">The Origin</button>
             </li>
             <li>
-                <a href="famous.html">
-                    <p>The Famous ones</p>
-                </a>
+                <button onclick="window.location.href='famous.html'">The Famous</button>
             </li>
             <li>
-                <a class="active" href="recipes.html">
-                    <p>The Recipes</p>
-                </a>
+                <button class="active" onclick="window.location.href='recipes.html'">The Recipes</button>
             </li>
         </ul>
     </nav>
@@ -39,175 +33,152 @@
         <h1 class="TextGradient">THE RECIPES</h1>
     </header>
 
-    <section id="ocean">
-        <img src=".img/bigpage/1x/ocean.png" alt="an Ocean to cry in">
-    </section>
+    <main>
+        <img id="ocean" src=".img/bigpage/1x/ocean.png" alt="an Ocean to cry in">
 
-    <ul class="bottles">
-        <li class="bottle">
-            <img class="responsive-hide" src=".img/bigpage/1x/recipe.png" alt="a recipe bottled, pirate style">
-        </li>
+        <ul class="bottles">
+            <li class="bottle">
+                <img class="responsive-hide" src=".img/bigpage/1x/recipe.png" alt="a recipe bottled, pirate style">
+            </li>
 
-        <li class="bottle">
-            <img class="responsive-hide" src=".img/bigpage/1x/recipe.png" alt="a recipe bottled, pirate style">
-        </li>
+            <li class="bottle">
+                <img class="responsive-hide" src=".img/bigpage/1x/recipe.png" alt="a recipe bottled, pirate style">
+            </li>
 
-        <li class="bottle">
-            <img class="responsive-hide" src=".img/bigpage/1x/recipe.png" alt="a recipe bottled, pirate style">
-        </li>
+            <li class="bottle">
+                <img class="responsive-hide" src=".img/bigpage/1x/recipe.png" alt="a recipe bottled, pirate style">
+            </li>
+        </ul>
 
+        <img class="responsive-hide divider" src=".img/bigpage/1x/breakline.png" alt="divider">
 
-    </ul>
-
-    <section class="divider">
-        <img class="responsive-hide" src=".img/bigpage/1x/breakline.png" alt="divider">
-    </section>
-
-
-    <ul id="recipe-block">
-        <li>
-            <section>
+        <ul class="InformationBlock">
+            <li>
                 <img class="responsive-hide" src=".img/libre.jpg" alt="a picture of the Cuba Libre cocktail">
-            </section>
 
+                <article>
+                    <h2>
+                        Cuba Libre
+                    </h2>
+                    <h3>
+                        The most famous party cocktail with a different name, that makes sense if you look at what it
+                        contains.
+                    </h3>
+                    <table>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Fluid</th>
+                        </tr>
+                        <tr>
+                            <th>2 wedge</th>
+                            <th>Lime (fresh)</th>
+                        </tr>
+                        <tr>
+                            <th>2 shot</th>
+                            <th>Havana Club 3 Year Old rum</th>
+                        </tr>
+                        <tr>
+                            <th>1 dash</th>
+                            <th>Angostura Aromatic Bitters</th>
+                        </tr>
+                        <tr>
+                            <th>4 shot</th>
+                            <th>Cola (e.g. Coca Cola or Pepsi Cola)</th>
+                        </tr>
+                    </table>
+                </article>
+            </li>
 
-            <header>
-                <h2>
-                    Cuba Libre
-                </h2>
-            </header>
-            <article>
-                <h3>
-                    The most famous party cocktail with a different name, that makes sense if you look at what it
-                    contains.
-                </h3>
-                <table>
-                    <tr>
-                        <th>Amount</th>
-                        <th>Fluid</th>
-                    </tr>
-                    <tr>
-                        <th>2 wedge</th>
-                        <th>Lime (fresh)</th>
-                    </tr>
-                    <tr>
-                        <th>2 shot</th>
-                        <th>Havana Club 3 Year Old rum</th>
-                    </tr>
-                    <tr>
-                        <th>1 dash</th>
-                        <th>Angostura Aromatic Bitters</th>
-                    </tr>
-                    <tr>
-                        <th>4 shot</th>
-                        <th>Cola (e.g. Coca Cola or Pepsi Cola)</th>
-                    </tr>
-                </table>
-            </article>
-        </li>
-
-        <li>
-            <section>
+            <li>
                 <img class="responsive-hide" src=".img/martini.jpeg" alt="a picture of the Martini cocktail">
-            </section>
 
-            <header>
-                <h2>
-                    Espresso Martini
-                </h2>
-            </header>
-            <article>
-                <h3>
-                    The drink with the well phrased "shaken not stirred".
-                </h3>
-                <table>
-                    <tr>
-                        <th>Amount</th>
-                        <th>Fluid</th>
-                    </tr>
-                    <tr>
-                        <th>1<sup>1/2</sup> shot</th>
-                        <th>Ketel One Vodka</th>
-                    </tr>
-                    <tr>
-                        <th>1 shot</th>
-                        <th>Espresso coffee (freshly made & hot)</th>
-                    </tr>
-                    <tr>
-                        <th><sup>2/3</sup> shot</th>
-                        <th>Bebo Coffee Liqueur</th>
-                    </tr>
-                    <tr>
-                        <th>2 drop</th>
-                        <th>Saline solution 4:1</th>
-                    </tr>
-                </table>
-            </article>
-        </li>
+                <article>
+                    <h2>
+                        Espresso Martini
+                    </h2>
+                    <h3>
+                        The drink with the well phrased "shaken not stirred".
+                    </h3>
+                    <table>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Fluid</th>
+                        </tr>
+                        <tr>
+                            <th>1<sup>1/2</sup> shot</th>
+                            <th>Ketel One Vodka</th>
+                        </tr>
+                        <tr>
+                            <th>1 shot</th>
+                            <th>Espresso coffee (freshly made & hot)</th>
+                        </tr>
+                        <tr>
+                            <th><sup>2/3</sup> shot</th>
+                            <th>Bebo Coffee Liqueur</th>
+                        </tr>
+                        <tr>
+                            <th>2 drop</th>
+                            <th>Saline solution 4:1</th>
+                        </tr>
+                    </table>
+                </article>
+            </li>
 
-        <li>
-            <section>
+            <li>
+
                 <img class="responsive-hide" src=".img/stormy.jpg" alt="a picture of the Dark and Stormy cocktail">
-            </section>
 
-            <header>
-                <h2>
-                    Dark 'n Stormy
-                </h2>
-            </header>
-            <article>
-                <h3>
-                    A sweet but bitter starter drink for the one who likes something darker before the storm of the
-                    night starts.
-                </h3>
-                <table>
-                    <tr>
-                        <th>Amount</th>
-                        <th>Fluid</th>
-                    </tr>
-                    <tr>
-                        <th>1<sup>2/3</sup> shot</th>
-                        <th>Dark/black/blackstrap Rum</th>
-                    </tr>
-                    <tr>
-                        <th><sup>2/3</sup> shot</th>
-                        <th>Lime juice (freshly squeezed)</th>
-                    </tr>
-                    <tr>
-                        <th><sup>1/3</sup> shot</th>
-                        <th>Sugar syrup 'rich'</th>
-                    </tr>
-                    <tr>
-                        <th>2 dash</th>
-                        <th>Angostura Aromatic Bitters</th>
-                    </tr>
-                    <tr>
-                        <th>3 shot</th>
-                        <th>Thomas Henry Ginger Beer</th>
-                    </tr>
 
-                </table>
-            </article>
-        </li>
-    </ul>
+                <article>
+                    <h2>
+                        Dark 'n Stormy
+                    </h2>
+                    <h3>
+                        A sweet but bitter starter drink for the one who likes something darker before the storm of the
+                        night starts.
+                    </h3>
+                    <table>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Fluid</th>
+                        </tr>
+                        <tr>
+                            <th>1<sup>2/3</sup> shot</th>
+                            <th>Dark/black/blackstrap Rum</th>
+                        </tr>
+                        <tr>
+                            <th><sup>2/3</sup> shot</th>
+                            <th>Lime juice (freshly squeezed)</th>
+                        </tr>
+                        <tr>
+                            <th><sup>1/3</sup> shot</th>
+                            <th>Sugar syrup 'rich'</th>
+                        </tr>
+                        <tr>
+                            <th>2 dash</th>
+                            <th>Angostura Aromatic Bitters</th>
+                        </tr>
+                        <tr>
+                            <th>3 shot</th>
+                            <th>Thomas Henry Ginger Beer</th>
+                        </tr>
 
-    <section class="divider">
-        <img class="responsive-hide" src=".img/bigpage/1x/breakline.png" alt="divider">
-    </section>
+                    </table>
+                </article>
+            </li>
+        </ul>
 
+        <img class="responsive-hide divider" src=".img/bigpage/1x/breakline.png" alt="divider">
+
+    </main>
 
     <footer>
-        <article>
-            <p>This website is proudly made by <a href="https://christiandonker.nl/" target="_blank">Chris Donker</a>
-            </p>
-            <p>For more information check the World Wide Web</p>
-            <p>To check the sources of the material used <a href="sources.html">Click Here!</a></p>
-            <p>To enjoy cocktails for yourself, checkout <a href="https://mr-finch.nl/menu/" target="_blank">Mr.
-                    Finch</a> in Utrecht</p>
-        </article>
-
+        <p>This website is proudly made by <a href="https://christiandonker.nl/" target="_blank">Chris Donker</a></p>
+        <p>For more information check the World Wide Web</p>
+        <p>To check the sources of the material used <a href="sources.html">Click Here!</a></p>
+        <p>To enjoy cocktails for yourself, checkout <a href="https://mr-finch.nl/menu/" target="_blank">Mr. Finch</a>
+            in Utrecht</p>
     </footer>
-
 </body>
 
 </html>
